@@ -1,0 +1,25 @@
+.img-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+body {
+  background: black;
+  color: red;
+}
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+p .test {
+  color: white;
+  font-size: 50px;
+}
