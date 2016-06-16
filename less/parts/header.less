@@ -1,10 +1,26 @@
-h1{
-	font-size: @font;
-	margin-top: @margin;
-}
-p{
-	.test{
-		color: @color2;
-		font-size: @font;
+.header{
+	background: @baseColor;
+	color: @baseTextColor;
+	font-size: 18px;
+	ul{
+		li{
+			.inline-block;
+			padding: 20px 30px;
+			list-style-type: circle;
+			&:after{
+				content: '';
+				.inline-block(middle);
+				margin-left: 30px;
+				width: 10px;
+				height: 10px;
+				background-color: @baseTextColor;
+				border-radius: 20px;
+			}
+		}
+	}
+	.action{
+		.icon-Email{
+			.icon-standart(emailqweerewrser)
+		}
 	}
 }

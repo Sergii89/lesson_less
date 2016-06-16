@@ -1,25 +1,28 @@
-.img-container {
+.header {
+  background: #3e91c9;
+  color: #fff;
+  font-size: 18px;
+}
+.header ul li {
   display: inline-block;
   vertical-align: top;
-  width: 80px;
+  padding: 20px 30px;
+  list-style-type: circle;
 }
-.box {
-  width: 100px;
-  height: 100px;
+.header ul li:after {
+  content: '';
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid black;
-  border-radius: 10px;
+  margin-left: 30px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 20px;
 }
-body {
-  background: black;
-  color: red;
-}
-h1 {
-  font-size: 50px;
-  margin-top: 20px;
-}
-p .test {
-  color: white;
-  font-size: 50px;
+.header .action .icon-Email {
+  background: url("../img/icons/emailqweerewrser.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }

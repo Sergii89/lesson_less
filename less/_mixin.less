@@ -1,18 +1,13 @@
-.inline-block(@valign:top){
+.inline-block(@va:top){
 	display: inline-block;
-	vertical-align: @valign;
+	vertical-align: @va;
 }
-.bordered(){
-	border: 1px solid black;
-	border-radius: 10px;
-}
-.img-container{
-	.inline-block;
-	width: 80px;
-}
-.box{
-	width: 100px;
-	height: 100px;
-	.inline-block(middle);
-	.bordered;
+.border(@width:@bordWidth, @color:@color, @style:@bordStyle){
+	border: @width @color @style;
+	}
+.icon-standart(@url, @va:middle, @w:@iconW){
+	background: url("@{pathToIcon}@{url}.png") no-repeat center;
+	width: @w;
+	height: @w;
+	.inline-block (@va);
 }

@@ -3,7 +3,6 @@ var connect = require ('gulp-connect');
 var livereload = require ('gulp-livereload');
 var less = require ('gulp-less')
 
-
 gulp.task ('missionZero', function(){
 	connect.server({
 		root: 'build/',
@@ -14,4 +13,11 @@ gulp.task ('less', function(){
 	gulp.src('less/general.less')
 		.pipe(less())
 		.pipe(gulp.dest('build/css/'))
+})
+gulp.task('default', function(){
+	gulp.start('less');
+
+	gulp.watch(['less/**/*.less'], function(){
+		gulp.start('less');
+	})
 })
